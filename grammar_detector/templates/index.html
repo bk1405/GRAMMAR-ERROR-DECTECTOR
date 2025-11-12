@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar Error Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Grammar Error Detector</h1>
+        <form action="/predict" method="post">
+            <textarea name="input_text" placeholder="Enter a sentence..."></textarea><br>
+            <button type="submit">Correct Sentence</button>
+        </form>
+    </div>
+</body>
+</html>

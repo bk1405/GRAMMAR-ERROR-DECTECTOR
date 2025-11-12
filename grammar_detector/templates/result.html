@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Correction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result">
+        <h2>Correction Result</h2>
+        <p><strong>Original Text:</strong><br>{{ original_text }}</p>
+        <hr>
+        <p><strong>Corrected Text:</strong><br>{{ corrected_text }}</p>
+        <a href="/" class="try-again">Try another sentence</a>
+    </div>
+</body>
+</html>
+
+
